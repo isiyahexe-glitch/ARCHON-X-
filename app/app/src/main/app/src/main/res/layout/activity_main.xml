@@ -1,34 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:gravity="center"
-    android:background="#000000"
-    android:padding="20dp">
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="ARCHON_X // DEADLOCK"
-        android:textColor="#FF0000"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        android:layout_marginBottom="30dp"/>
-    <EditText
-        android:id="@+id/targetNumber"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Target Number (9477...)"
-        android:textColorHint="#888888"
-        android:textColor="#FFFFFF"
-        android:inputType="phone"
-        android:layout_marginBottom="20dp"/>
-    <Button
-        android:id="@+id/btnBan"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="INITIATE BAN"
-        android:backgroundTint="#CC0000"
-        android:textColor="#FFFFFF"
-        android:textStyle="bold"/>
-</LinearLayout>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <application
+        android:label="ARCHON_X"
+        android:theme="@style/Theme.AppCompat.NoActionBar">
+        <activity android:name=".MainActivity" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>
